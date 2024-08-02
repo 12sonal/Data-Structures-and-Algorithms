@@ -1,0 +1,577 @@
+Testing Huffman Starts
+----------- Basic test Start --------------
+---- Problem 1 s =  a ------  STARTS
+------ Step 1: Character Occurrence ------
+a occurs 1 times
+
+------ Step 2: Tree Leaves build in this order ------
+Leaf node 1 a 1
+
+------ Step 3: Internal Nodes of the Tree is build in this order ------
+Internal Node 2: a 1
+Tree has 2 nodes
+
+------Step 4: Writing Dot file at Location------: D:\Output\1.dot
+
+------ Step 5: Code for each character is as follows -------
+a code is 0
+
+------Step 6: Encoding-------
+Encoded string: 0
+Decoded string: a
+Original string: a
+Your     string: a
+% reduction = -87.5
+---- Problem 1 s =  aba ------  STARTS
+------ Step 1: Character Occurrence ------
+a occurs 2 times
+b occurs 1 times
+
+------ Step 2: Tree Leaves build in this order ------
+Leaf node 1 b 1
+Leaf node 2 a 2
+
+------ Step 3: Internal Nodes of the Tree is build in this order ------
+Internal Node 3: ba 3
+Tree has 3 nodes
+
+------Step 4: Writing Dot file at Location------: D:\Output\2.dot
+
+------ Step 5: Code for each character is as follows -------
+a code is 1
+b code is 0
+
+------Step 6: Encoding-------
+Encoded string: 101
+Decoded string: aba
+Original string: aba
+Your     string: aba
+% reduction = -87.5
+---- Problem 1 s =  aaabbggggghhhhaaaggggaaaaa_+@# ------  STARTS
+------ Step 1: Character Occurrence ------
+a occurs 11 times
+b occurs 2 times
+g occurs 9 times
+h occurs 4 times
+_ occurs 1 times
++ occurs 1 times
+@ occurs 1 times
+# occurs 1 times
+
+------ Step 2: Tree Leaves build in this order ------
+Leaf node 1 _ 1
+Leaf node 2 + 1
+Leaf node 3 @ 1
+Leaf node 4 # 1
+Leaf node 5 b 2
+Leaf node 6 h 4
+Leaf node 7 g 9
+Leaf node 8 a 11
+
+------ Step 3: Internal Nodes of the Tree is build in this order ------
+Internal Node 9: _+ 2
+Internal Node 10: @# 2
+Internal Node 11: b_+ 4
+Internal Node 12: @#h 6
+Internal Node 13: b_+@#h 10
+Internal Node 14: gb_+@#h 19
+Internal Node 15: agb_+@#h 30
+Tree has 15 nodes
+
+------Step 4: Writing Dot file at Location------: D:\Output\3.dot
+
+------ Step 5: Code for each character is as follows -------
+a code is 0
+b code is 1100
+g code is 10
+h code is 1111
+_ code is 11010
++ code is 11011
+@ code is 11100
+# code is 11101
+
+------Step 6: Encoding-------
+Encoded string: 0001100110010101010101111111111111111000101010100000011010110111110011101
+Decoded string: aaabbggggghhhhaaaggggaaaaa_+@#
+Original string: aaabbggggghhhhaaaggggaaaaa_+@#
+Your     string: aaabbggggghhhhaaaggggaaaaa_+@#
+% reduction = -69.58333333333333
+---- Problem 1 s =  A quick brown fox jumps over the lazy dog ------  STARTS
+------ Step 1: Character Occurrence ------
+A occurs 1 times
+  occurs 8 times
+q occurs 1 times
+u occurs 2 times
+i occurs 1 times
+c occurs 1 times
+k occurs 1 times
+b occurs 1 times
+r occurs 2 times
+o occurs 4 times
+w occurs 1 times
+n occurs 1 times
+f occurs 1 times
+x occurs 1 times
+j occurs 1 times
+m occurs 1 times
+p occurs 1 times
+s occurs 1 times
+v occurs 1 times
+e occurs 2 times
+t occurs 1 times
+h occurs 1 times
+l occurs 1 times
+a occurs 1 times
+z occurs 1 times
+y occurs 1 times
+d occurs 1 times
+g occurs 1 times
+
+------ Step 2: Tree Leaves build in this order ------
+Leaf node 1 A 1
+Leaf node 2 q 1
+Leaf node 3 i 1
+Leaf node 4 c 1
+Leaf node 5 k 1
+Leaf node 6 b 1
+Leaf node 7 w 1
+Leaf node 8 n 1
+Leaf node 9 f 1
+Leaf node 10 x 1
+Leaf node 11 j 1
+Leaf node 12 m 1
+Leaf node 13 p 1
+Leaf node 14 s 1
+Leaf node 15 v 1
+Leaf node 16 t 1
+Leaf node 17 h 1
+Leaf node 18 l 1
+Leaf node 19 a 1
+Leaf node 20 z 1
+Leaf node 21 y 1
+Leaf node 22 d 1
+Leaf node 23 g 1
+Leaf node 24 u 2
+Leaf node 25 r 2
+Leaf node 26 e 2
+Leaf node 27 o 4
+Leaf node 28   8
+
+------ Step 3: Internal Nodes of the Tree is build in this order ------
+Internal Node 29: Aq 2
+Internal Node 30: ic 2
+Internal Node 31: kb 2
+Internal Node 32: wn 2
+Internal Node 33: fx 2
+Internal Node 34: jm 2
+Internal Node 35: ps 2
+Internal Node 36: vt 2
+Internal Node 37: hl 2
+Internal Node 38: az 2
+Internal Node 39: yd 2
+Internal Node 40: gu 3
+Internal Node 41: re 4
+Internal Node 42: Aqic 4
+Internal Node 43: kbwn 4
+Internal Node 44: fxjm 4
+Internal Node 45: psvt 4
+Internal Node 46: hlaz 4
+Internal Node 47: ydgu 5
+Internal Node 48: ore 8
+Internal Node 49: Aqickbwn 8
+Internal Node 50: fxjmpsvt 8
+Internal Node 51: hlazydgu 9
+Internal Node 52:  ore 16
+Internal Node 53: Aqickbwnfxjmpsvt 16
+Internal Node 54: hlazydgu ore 25
+Internal Node 55: Aqickbwnfxjmpsvthlazydgu ore 41
+Tree has 55 nodes
+
+------Step 4: Writing Dot file at Location------: D:\Output\4.dot
+
+------ Step 5: Code for each character is as follows -------
+A code is 00000
+  code is 110
+q code is 00001
+u code is 10111
+i code is 00010
+c code is 00011
+k code is 00100
+b code is 00101
+r code is 11110
+o code is 1110
+w code is 00110
+n code is 00111
+f code is 01000
+x code is 01001
+j code is 01010
+m code is 01011
+p code is 01100
+s code is 01101
+v code is 01110
+e code is 11111
+t code is 01111
+h code is 10000
+l code is 10001
+a code is 10010
+z code is 10011
+y code is 10100
+d code is 10101
+g code is 10110
+
+------Step 6: Encoding-------
+Encoded string: 00000110000011011100010000110010011000101111101110001100011111001000111001001110010101011101011011000110111011100111011111111101100111110000111111101000110010100111010011010101111010110
+Decoded string: A quick brown fox jumps over the lazy dog
+Original string: A quick brown fox jumps over the lazy dog
+Your     string: A quick brown fox jumps over the lazy dog
+% reduction = -43.59756097560975
+---- Problem 1 s =  Pack my box with five dozen liquor jugs ------  STARTS
+------ Step 1: Character Occurrence ------
+P occurs 1 times
+a occurs 1 times
+c occurs 1 times
+k occurs 1 times
+  occurs 7 times
+m occurs 1 times
+y occurs 1 times
+b occurs 1 times
+o occurs 3 times
+x occurs 1 times
+w occurs 1 times
+i occurs 3 times
+t occurs 1 times
+h occurs 1 times
+f occurs 1 times
+v occurs 1 times
+e occurs 2 times
+d occurs 1 times
+z occurs 1 times
+n occurs 1 times
+l occurs 1 times
+q occurs 1 times
+u occurs 2 times
+r occurs 1 times
+j occurs 1 times
+g occurs 1 times
+s occurs 1 times
+
+------ Step 2: Tree Leaves build in this order ------
+Leaf node 1 P 1
+Leaf node 2 a 1
+Leaf node 3 c 1
+Leaf node 4 k 1
+Leaf node 5 m 1
+Leaf node 6 y 1
+Leaf node 7 b 1
+Leaf node 8 x 1
+Leaf node 9 w 1
+Leaf node 10 t 1
+Leaf node 11 h 1
+Leaf node 12 f 1
+Leaf node 13 v 1
+Leaf node 14 d 1
+Leaf node 15 z 1
+Leaf node 16 n 1
+Leaf node 17 l 1
+Leaf node 18 q 1
+Leaf node 19 r 1
+Leaf node 20 j 1
+Leaf node 21 g 1
+Leaf node 22 s 1
+Leaf node 23 e 2
+Leaf node 24 u 2
+Leaf node 25 o 3
+Leaf node 26 i 3
+Leaf node 27   7
+
+------ Step 3: Internal Nodes of the Tree is build in this order ------
+Internal Node 28: Pa 2
+Internal Node 29: ck 2
+Internal Node 30: my 2
+Internal Node 31: bx 2
+Internal Node 32: wt 2
+Internal Node 33: hf 2
+Internal Node 34: vd 2
+Internal Node 35: zn 2
+Internal Node 36: lq 2
+Internal Node 37: rj 2
+Internal Node 38: gs 2
+Internal Node 39: eu 4
+Internal Node 40: Pack 4
+Internal Node 41: mybx 4
+Internal Node 42: wthf 4
+Internal Node 43: vdzn 4
+Internal Node 44: lqrj 4
+Internal Node 45: gso 5
+Internal Node 46: ieu 7
+Internal Node 47: Packmybx 8
+Internal Node 48: wthfvdzn 8
+Internal Node 49: lqrjgso 9
+Internal Node 50:  ieu 14
+Internal Node 51: Packmybxwthfvdzn 16
+Internal Node 52: lqrjgso ieu 23
+Internal Node 53: Packmybxwthfvdznlqrjgso ieu 39
+Tree has 53 nodes
+
+------Step 4: Writing Dot file at Location------: D:\Output\5.dot
+
+------ Step 5: Code for each character is as follows -------
+P code is 00000
+a code is 00001
+c code is 00010
+k code is 00011
+  code is 110
+m code is 00100
+y code is 00101
+b code is 00110
+o code is 1011
+x code is 00111
+w code is 01000
+i code is 1110
+t code is 01001
+h code is 01010
+f code is 01011
+v code is 01100
+e code is 11110
+d code is 01101
+z code is 01110
+n code is 01111
+l code is 10000
+q code is 10001
+u code is 11111
+r code is 10010
+j code is 10011
+g code is 10100
+s code is 10101
+
+------Step 6: Encoding-------
+Encoded string: 0000000001000100001111000100001011100011010110011111001000111001001010101100101111100110011110110011011011011101111001111110100001110100011111110111001011010011111111010010101
+Decoded string: Pack my box with five dozen liquor jugs
+Original string: Pack my box with five dozen liquor jugs
+Your     string: Pack my box with five dozen liquor jugs
+% reduction = -43.91025641025641
+---- Problem 1 s =  Long years ago we made a tryst with destiny, and now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom. A moment comes, which comes but rarely in history, when we step out from the old to the new, when an age ends, and when the soul of a nation, long suppressed, finds utterance. ------  STARTS
+------ Step 1: Character Occurrence ------
+L occurs 1 times
+o occurs 26 times
+n occurs 26 times
+g occurs 6 times
+  occurs 79 times
+y occurs 8 times
+e occurs 47 times
+a occurs 20 times
+r occurs 17 times
+s occurs 21 times
+w occurs 16 times
+m occurs 12 times
+d occurs 15 times
+t occurs 29 times
+i occurs 15 times
+h occurs 20 times
+, occurs 11 times
+c occurs 5 times
+l occurs 18 times
+u occurs 11 times
+p occurs 5 times
+f occurs 7 times
+b occurs 3 times
+v occurs 1 times
+. occurs 3 times
+A occurs 2 times
+k occurs 2 times
+I occurs 1 times
+
+------ Step 2: Tree Leaves build in this order ------
+Leaf node 1 L 1
+Leaf node 2 v 1
+Leaf node 3 I 1
+Leaf node 4 A 2
+Leaf node 5 k 2
+Leaf node 6 b 3
+Leaf node 7 . 3
+Leaf node 8 c 5
+Leaf node 9 p 5
+Leaf node 10 g 6
+Leaf node 11 f 7
+Leaf node 12 y 8
+Leaf node 13 , 11
+Leaf node 14 u 11
+Leaf node 15 m 12
+Leaf node 16 d 15
+Leaf node 17 i 15
+Leaf node 18 w 16
+Leaf node 19 r 17
+Leaf node 20 l 18
+Leaf node 21 a 20
+Leaf node 22 h 20
+Leaf node 23 s 21
+Leaf node 24 o 26
+Leaf node 25 n 26
+Leaf node 26 t 29
+Leaf node 27 e 47
+Leaf node 28   79
+
+------ Step 3: Internal Nodes of the Tree is build in this order ------
+Internal Node 29: Lv 2
+Internal Node 30: IA 3
+Internal Node 31: kLv 4
+Internal Node 32: b. 6
+Internal Node 33: IAkLv 7
+Internal Node 34: cp 10
+Internal Node 35: gb. 12
+Internal Node 36: fIAkLv 14
+Internal Node 37: ycp 18
+Internal Node 38: ,u 22
+Internal Node 39: mgb. 24
+Internal Node 40: fIAkLvd 29
+Internal Node 41: iw 31
+Internal Node 42: rl 35
+Internal Node 43: ycpa 38
+Internal Node 44: hs 41
+Internal Node 45: ,umgb. 46
+Internal Node 46: on 52
+Internal Node 47: tfIAkLvd 58
+Internal Node 48: iwrl 66
+Internal Node 49: ycpahs 79
+Internal Node 50: ,umgb.e 93
+Internal Node 51: ontfIAkLvd 110
+Internal Node 52: iwrl  145
+Internal Node 53: ycpahs,umgb.e 172
+Internal Node 54: ontfIAkLvdiwrl  255
+Internal Node 55: ycpahs,umgb.eontfIAkLvdiwrl  427
+Tree has 55 nodes
+
+------Step 4: Writing Dot file at Location------: D:\Output\6.dot
+
+------ Step 5: Code for each character is as follows -------
+L code is 101101110
+o code is 1000
+n code is 1001
+g code is 010110
+  code is 111
+y code is 00000
+e code is 011
+a code is 0001
+r code is 11010
+s code is 0011
+w code is 11001
+m code is 01010
+d code is 10111
+t code is 1010
+i code is 11000
+h code is 0010
+, code is 01000
+c code is 000010
+l code is 11011
+u code is 01001
+p code is 000011
+f code is 101100
+b code is 0101110
+v code is 101101111
+. code is 0101111
+A code is 10110101
+k code is 10110110
+I code is 10110100
+
+------Step 6: Encoding-------
+Encoded string: 10110111010001001010110111000000110001110100011111000101011010001111100101111101010000110111011111000111110101101000000001110101111100111000101000101111011101100111010110001001000000100011100011001101111111001100011001111101000100111111010110000101001111100001010000101001100111111100100100111001111110010111110011001000011101111011111110100111011101101101010111100001001110101110000111101101110111010110011010001111001100010101111100100101000110111101100000111100011010111110001001111101100010011101111011111010100110001001101001110100110100011101011100100110101111011011110111101000000111001101001010111000111010000110011010110000001110111101100000010111110110101101011110100010011111001110101101010001011011001111110001011001111010001001111101010110001011110011100001011000101010111001010000100111010010001111100100100111001111101000100111111100110001101011011101111110011110110110110000110011010001111011010010011011111000000111111001110001101111011111000111001000110110110011111101010001111101111000101100011111000110011011111110110011010011011101111000010100101111111101101011110101010000101001110011010111000010100001010011001101000111110010010110000000100010111000010100001010011001111101011100100110101111101000011101001111011000001111100010011110010110000011101010001101000000010001111100100100111001111110010111110011101001100001111110000100110101111011001101010000101011110100010011111100011011101111111010100011110100010011111100101111001010001111100100100111001111000110011110001010110011111011100110111001101000111000110011011111111001001001110011111010001001111100111000010011101111110001011001110001111100100011010110001000100101000111110111000100101011011100110100100001100001111010011001100110111011101000111101100110001001101110011111010011010101001111010000110010000100110101111
+Decoded string: Long years ago we made a tryst with destiny, and now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom. A moment comes, which comes but rarely in history, when we step out from the old to the new, when an age ends, and when the soul of a nation, long suppressed, finds utterance.
+Original string: Long years ago we made a tryst with destiny, and now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom. A moment comes, which comes but rarely in history, when we step out from the old to the new, when an age ends, and when the soul of a nation, long suppressed, finds utterance.
+Your     string: Long years ago we made a tryst with destiny, and now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom. A moment comes, which comes but rarely in history, when we step out from the old to the new, when an age ends, and when the soul of a nation, long suppressed, finds utterance.
+% reduction = -47.33606557377049
+---- Problem 1 s =  Baa, baa, black sheep, have you any wool? ------  STARTS
+------ Step 1: Character Occurrence ------
+B occurs 1 times
+a occurs 7 times
+, occurs 3 times
+  occurs 7 times
+b occurs 2 times
+l occurs 2 times
+c occurs 1 times
+k occurs 1 times
+s occurs 1 times
+h occurs 2 times
+e occurs 3 times
+p occurs 1 times
+v occurs 1 times
+y occurs 2 times
+o occurs 3 times
+u occurs 1 times
+n occurs 1 times
+w occurs 1 times
+? occurs 1 times
+
+------ Step 2: Tree Leaves build in this order ------
+Leaf node 1 B 1
+Leaf node 2 c 1
+Leaf node 3 k 1
+Leaf node 4 s 1
+Leaf node 5 p 1
+Leaf node 6 v 1
+Leaf node 7 u 1
+Leaf node 8 n 1
+Leaf node 9 w 1
+Leaf node 10 ? 1
+Leaf node 11 b 2
+Leaf node 12 l 2
+Leaf node 13 h 2
+Leaf node 14 y 2
+Leaf node 15 , 3
+Leaf node 16 e 3
+Leaf node 17 o 3
+Leaf node 18 a 7
+Leaf node 19   7
+
+------ Step 3: Internal Nodes of the Tree is build in this order ------
+Internal Node 20: Bc 2
+Internal Node 21: ks 2
+Internal Node 22: pv 2
+Internal Node 23: un 2
+Internal Node 24: w? 2
+Internal Node 25: bl 4
+Internal Node 26: hy 4
+Internal Node 27: Bcks 4
+Internal Node 28: pvun 4
+Internal Node 29: w?, 5
+Internal Node 30: eo 6
+Internal Node 31: blhy 8
+Internal Node 32: Bckspvun 8
+Internal Node 33: w?,eo 11
+Internal Node 34: a  14
+Internal Node 35: blhyBckspvun 16
+Internal Node 36: w?,eoa  25
+Internal Node 37: blhyBckspvunw?,eoa  41
+Tree has 37 nodes
+
+------Step 4: Writing Dot file at Location------: D:\Output\7.dot
+
+------ Step 5: Code for each character is as follows -------
+B code is 01000
+a code is 110
+, code is 1001
+  code is 111
+b code is 0000
+l code is 0001
+c code is 01001
+k code is 01010
+s code is 01011
+h code is 0010
+e code is 1010
+p code is 01100
+v code is 01101
+y code is 0011
+o code is 1011
+u code is 01110
+n code is 01111
+w code is 10000
+? code is 10001
+
+------Step 6: Encoding-------
+Encoded string: 0100011011010011110000110110100111100000001110010010101011101011001010101010011001001111001011001101101011100111011011101111100111100111111000010111011000110001
+Decoded string: Baa, baa, black sheep, have you any wool?
+Original string: Baa, baa, black sheep, have you any wool?
+Your     string: Baa, baa, black sheep, have you any wool?
+% reduction = -51.21951219512195
+-----------Basic test Passed -------------------
+If you like my class, can uou please recommend on https://www.linkedin.com/in/jagadeesh-vasudevamurthy-6796591/
+Testing Huffman Ends
